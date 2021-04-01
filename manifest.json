@@ -5,6 +5,11 @@
     "manifest_version": 2, 
     "author": "Yadulla Ibrahimov & Allison Jacobs",
     "chrome_url_overrides" : {  "newtab": "newtab.html"},
-    "permissions": ["activeTab"],
-    "icons": {"128": "favicon.ico"}
+    "permissions": [
+        "activeTab",
+        "chrome://favicon/",
+        "http://*/*"
+    ],
+    "icons": {"128": "favicon.ico"},
+    "all_frames": true
 }

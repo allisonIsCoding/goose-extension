@@ -1,26 +1,73 @@
 body {
+  height: 100%;
+  width: 100%;
   margin: auto;
   cursor: none;
   opacity: 0.9;
+  z-index: -100;
+  background-color: skyblue;
+  /* background-image: url(reddit-eli5.jpg); */
+  /* background-image: url(wiki-goose.jpg); */
+  /* background-image: url(google-home.jpg); */
+  /* background-image: url(water-background.jpg); */
+  background-repeat: no-repeat;
+  user-select: none;
 }
+
+#eggContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  user-select: none;
+  overflow: hidden;
+  /* transform: translate(-20px, -20px);
+  background-image: url(egg-icon.png); */
+}
+
+#egg {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  user-select: none;
+  overflow: hidden;
+  left: -100px;
+  top: -100px;
+  /* left: 200px;
+  top: 200px; */
+  /* width: 10px; */
+  /* transform: translate(-20px, -20px);
+  background-image: url(egg-icon.png); */
+}
+
+/* #doubleClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
 
 #mouseOnMe {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  user-select: none;
 }
 
-#ball {
+#goose {
   position: absolute;
   transform: translate(-20px, -20px);
   width: 10px;
   height: 10px;
   pointer-events: none;
   cursor: url(gooseicon.png), auto;
+  z-index: 100;
+  user-select: none;
 }
 
 #coords {
   position: absolute;
   width: 100%;
   text-align: center;
+  user-select: none;
 }
